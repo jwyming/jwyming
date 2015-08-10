@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+	<!--top menu-->
+	<ul id="css3menu1" class="topmenu">
+		<li class="topfirst"><a href="#{facesContext.externalContext.request.contextPath}/views/index.xhtml">首页</a></li>
+		<li class="topmenu"><a>|</a></li>
+		<li class="topmenu"><a href="#{facesContext.externalContext.request.contextPath}/views/intro.xhtml">个人简介</a></li>
+		<li class="topmenu"><a>|</a></li>
+		<li class="topmenu"><a href="#{facesContext.externalContext.request.contextPath}/views/work_experience.xhtml">工作经历</a></li>
+		<li class="topmenu"><a>|</a></li>
+		<li class="topmenu"><a href="#{facesContext.externalContext.request.contextPath}/views/project_experience.xhtml">项目经验</a></li>
+		<li class="topmenu"><a>|</a></li>
+		<li class="topmenu"><a href="#{facesContext.externalContext.request.contextPath}/views/training.xhtml">培训</a>
+			<!--<ul>-->
+				<!--<li class="subfirst"><a href="#{facesContext.externalContext.request.contextPath}/views/intro.xhtml">个人风采</a></li>-->
+				<!--<li><a href="#{facesContext.externalContext.request.contextPath}/views/intro.xhtml">家庭合影</a></li>-->
+				<!--<li><a href="#{facesContext.externalContext.request.contextPath}/views/intro.xhtml">旅游纪念</a></li>-->
+			<!--</ul>-->
+		</li>
+		<li class="topmenu"><a>|</a></li>
+		<li class="toplast"><a href="#{facesContext.externalContext.request.contextPath}/views/contact.xhtml">联系方式</a></li>
+	</ul>
+	<img src="#{facesContext.externalContext.request.contextPath}/resources/images/icons/divider.gif" alt="" class="divider"/><br/>
+</ui:composition>
+</html>

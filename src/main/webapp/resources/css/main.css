@@ -1,0 +1,180 @@
+body {
+    /*background-color: #c91028;*/
+    background-color: #00004c;
+}
+
+body .top .clearfix .header1 {
+    /*background-color: #c91028;*/
+    background-color: #00004c;
+}
+
+body .top .clearfix .header2 {
+    /*background-color: #c91028;*/
+    background-color: #00004c;
+}
+
+
+html, body, .top {
+    height: 100%;
+}
+
+.top {
+    width: 908px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+#main {
+    padding-bottom: 300px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+    height: 1%;
+}
+
+
+.clearfix {
+    display: block;
+}
+/* End hide from IE-mac */
+
+.header1 {
+    float: left;
+    /*width: 445px;*/
+    /*width: 674px;*/
+    width: 62px;
+    padding: 0;
+    margin: 0;
+}
+
+.header2 {
+    float: right;
+    width: 846px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_row {
+    float: left;
+    width: 908px;
+    text-align: left;
+}
+
+.one_row {
+    width: 908px;
+    text-align: left;
+    float: left;
+}
+
+.content {
+    width: 908px;
+    text-align: left;
+    float: left;
+}
+
+.divider {
+    height: 7px;
+    margin: 5px 0;
+    width: inherit;
+}
+
+#footer {
+    width: 908px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: -300px;
+    height: 300px;
+    clear:both;
+    /*background-color: #FF0000;*/
+}
+
+.scroller {
+    float: left;
+    width: 908px;
+}
+
+.footer1 {
+    float: left;
+    width: 152px;
+    overflow: auto;
+}
+
+.footer2 {
+    float: right;
+    width: 756px;
+    overflow: auto;
+}
+
+.footer_space {
+    width: 908px;
+    height: 40px;
+    float: left;
+    overflow: auto;
+}
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    /*color: #666;*/
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 16px;
+    font-weight: normal;
+
+}
+
+.body18 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    /*color: #666;*/
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 16px;
+    font-weight: normal;
+
+}
+
+.bodycenter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    /*color: #666;*/
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 16px;
+    font-weight: normal;
+    text-align: center;
+
+}
+
+.verizon_logo {
+    background-color: #c91028;
+    vertical-align: top;
+    height: 23px;
+}

@@ -1,0 +1,41 @@
+.bodyxtrasml {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    /*color: #666;*/
+    /*color: #000000;*/
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 16px;
+    font-weight: normal;
+
+}
+
+.dottedlinks {
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-size: 13px;*/
+    font-style: normal;
+    text-decoration: none;
+    border-bottom: 1px dotted #ffffff;
+}
+
+.dottedlinks a:hover {
+    border-bottom: 1px dotted #ffffff;
+}
+
+.footer_image {
+    width: 25px;
+    height: 25px;
+    margin: 0 2px;
+    padding: 0;
+    border: 0;
+    float: left;
+}
+
+.footer_image_sign {
+    height: 104px;
+    margin: 5px 0;
+    width: 908px;
+}

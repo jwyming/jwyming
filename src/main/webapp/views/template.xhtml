@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <!--specify the page title-->
+    <title>吴义明的个人主页</title>
+
+    <!--define the content type, charset-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <!--add the favorite icon that will show on the address bar-->
+    <link type="image/x-icon" rel="icon" href="#{facesContext.externalContext.request.contextPath}/resources/images/favicon.ico"/>
+    <link type="image/x-icon" rel="shortcut icon" href="#{facesContext.externalContext.request.contextPath}/resources/images/favicon.ico"/>
+    <link type="image/x-icon" rel="bookmark" href="#{facesContext.externalContext.request.contextPath}/resources/images/favicon.ico"/>
+
+    <!--add the style sheets-->
+    <link type="text/css" rel="stylesheet" href="#{facesContext.externalContext.request.contextPath}/resources/css/main.css"/>
+    <link type="text/css" rel="stylesheet" href="#{facesContext.externalContext.request.contextPath}/resources/css/menu.css"/>
+    <link type="text/css" rel="stylesheet" href="#{facesContext.externalContext.request.contextPath}/resources/css/footer.css"/>
+
+    <!--add the javascript files-->
+    <script type="text/javascript" src="#{facesContext.externalContext.request.contextPath}/resources/js/main.js"></script>
+
+</h:head>
+
+<h:body>
+    <!--top level div container, define the width and content in center-->
+    <div class="top">
+        <div id="main" class="clearfix">
+
+            <!--start head in the left-->
+            <div class="header1">
+                <ui:insert name="header1" >
+                    <ui:include src="./common/header1.xhtml" />
+                </ui:insert>
+            </div>
+            <!--end head in the left-->
+
+            <!--start head in the right column-->
+            <div class="header2">
+                <ui:insert name="header2" >
+                    <ui:include src="./common/header2.xhtml" />
+                </ui:insert>
+            </div>
+            <!--end head in the right column-->
+
+            <!--start navigator menu-->
+            <div class="nav_row">
+                <a4j:outputPanel id="navigation" layout="block">
+                    <ui:include src="./common/menu.xhtml"/>
+                </a4j:outputPanel>
+
+                <a4j:outputPanel id="subNavigationWorkSpace" layout="block">
+                    <ui:insert name="subNavigationContent" />
+                </a4j:outputPanel>
+            </div>
+            <!--end navigator menu-->
+
+            <!--start the slideshow at page head-->
+            <div class="one_row">
+                <a4j:outputPanel id="slideShowWorkSpace" layout="block">
+                    <ui:insert name="slideShowContent" />
+                </a4j:outputPanel>
+            </div>
+            <!--end the slideshow at page head-->
+
+
+            <!--start the quote -->
+            <div class="one_row">
+                <a4j:outputPanel id="quoteWorkSpace" layout="block">
+                    <ui:insert name="quoteContent" />
+                </a4j:outputPanel>
+            </div>
+            <!--end the quote -->
+
+
+            <!-- start the page content -->
+            <div class="content">
+                <a4j:outputPanel id="workspace" layout="block">
+                    <ui:insert name="workspace">
+                        Default Content from template
+                    </ui:insert>
+                </a4j:outputPanel>
+            </div>
+            <!-- end the page content -->
+
+        </div>
+    </div>
+
+    <div id="footer">
+        <!--start scroller for scroll up -->
+        <div class="scroller">
+            <p class="body">&nbsp;</p>
+
+            <p class="body">&nbsp;</p>
+
+            <p class="body">&nbsp;</p>
+
+            <p class="body">&nbsp;</p>
+            <a href="#" class="smoothScroll">
+                <img src="#{facesContext.externalContext.request.contextPath}/resources/images/icons/arrow_up.png" alt="arrow_up"/>
+            </a>
+            <img src="#{facesContext.externalContext.request.contextPath}/resources/images/icons/footer_sign.png" alt="" class="footer_image_sign"/>
+        </div>
+        <!--end scroller for scroll up -->
+
+        <!--start left footer: the icons-->
+        <div class="footer1">
+            <ui:insert name="footer" >
+                <ui:include src="./common/footer1.xhtml" />
+            </ui:insert>
+        </div>
+        <!--end left footer: the icons-->
+
+        <!--start right footer: copy right-->
+        <div class="footer2">
+            <ui:insert name="footer" >
+                <ui:include src="./common/footer2.xhtml" />
+            </ui:insert>
+        </div>
+        <!--end right footer: copy right-->
+
+        <!--start some space on the footer-->
+        <div class="footer_space"></div>
+        <!--end some space on the footer-->
+
+    </div>
+</h:body>
+</html>
